@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hekto</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owl/owl.theme.default.min.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                accent:'#FB2E86',
+                sectionhover: '#2F1AC4',
+                Text: '#151875',
+                purple: '#7E33E0',
+                slider: '#F2F0FF',
+                subtext: '#8A8FB9',
+                green: '#05E6B7',
+                bgshade: '#EEEFFB'
+
+              },
+              fontFamily: {
+                lato: ["Lato", "sans-serif"],
+                jose: ["Josefin Sans", "sans-serif"]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="top-header bg-purple text-white">
+        <div class="left-side-header flex">
+            <div class="items">
+                <i class='bx bx-envelope'></i>
+                <p>mhhasanul@gmail.com</p>
+            </div>
+            <div class="items">
+                <i class='bx bx-phone-call' ></i>
+                <p>(12345)67890</p>
+            </div>
+        </div>
+        <div class="right-side-header">
+            <div class="items">
+                <p>English</p>
+                <i class='bx bxs-chevron-down' ></i>
+            </div>
+            <div class="items">
+                <p>USD</p>
+                <i class='bx bxs-chevron-down' ></i>
+            </div>
+            <div class="items">
+                <p>Login</p>
+                <i class='bx bx-user' ></i>
+            </div>
+            <div class="items">
+                <p>Whishlist</p>
+                <i class='bx bx-heart' ></i>
+            </div>
+            <div class="items">
+                <i class='bx bx-cart-alt' ></i>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <h1 class="logo ">Hekto</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu"></i>
+            <i class='bx bx-x' id="cancel"></i>
+        </label>
+        <nav>
+                <ul class="nav-items">
+                    <li><a href="#home" class="text-accent">Home</a></li>
+                    <li><a href="#pages">Pages</a></li>
+                    <li><a href="#prodcut">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <div class="search relative">
+                <input type="text">
+                <button><i class='bx bx-search'></i></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- slider -->
+         <div class="slider bg-slider">
+            <div class="left-side-img items-center justify-between relative">
+                <img src="./img/image 32.png" alt="" class="lamp">
+                <div class="ellipse absolute right-64 bottom-80"><img src="./img/Ellipse 62.png" alt=""></div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="slider-text-content me-16">
+                    <p class="tiny-text text-accent">Best Furniture For Your Castle....</p>
+                    <p class="slider-head">New Furniture Collection <br> Trends in 2020</p>
+                    <p class="slider-paragraph text-subtext font-semibold pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing <br> in phasellus non in justo.</p>
+                    <button class="shopnow">Shop Now</button>
+                </div>
+                <div class="slider-img-wrapper relative">
+                    <div class="bg-img-slider">
+                        <img src="./img/Group 129.png" alt="">
+                    </div>
+                    <div class="product-img-slider absolute">
+                        <img src="./img/Armchair-Pink.png" alt="">
+                    </div>
+                    <div class="discount-img-slider absolute">
+                        <img src="./img/Group 130.png" alt="">
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!-- featured product -->
+         <h1 class="subsection-head">Featured Products</h1>
+         <div class="owl-carousel owl-theme">
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured1.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured2.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured3.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured4.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured5.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured6.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured7.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            <div class="item featured-product shadow-md">
+                <div class="img-box">
+                    <img src="./img/featured8.png" alt=""></div>
+                <div class="featured-details">
+                    <h1>Cantilever chair</h1>
+                    <div class="color-line flex justify-center items">
+                        <hr class="w-3 me-2 border-2 rounded border-green">
+                        <hr class="w-3 me-2 border-2 rounded border-accent">
+                        <hr class="w-3 me-2 border-2 rounded border-sectionhover">
+                    </div>
+                    <p class="code">Code - Y523201</p>
+                    <p class="rate">$42.00</p>
+                </div>
+            </div>
+            
+         </div>
+        
+        <!--latest products  -->
+         <h1 class="subsection-head">Latest Products</h1>
+         <div class="latest">
+           <ul class="flex justify-center items-center">
+               <li><a class="active" href="">New Arrivals</a></li>
+               <li><a href="">Best Seller</a></li>
+               <li><a href="">Featured</a></li>
+               <li><a href="">Special Offer</a></li>
+           </ul>
+           <div class="latest-products">
+               <div class="latest-img-wrapper">
+                   <div class="latest-img-box">
+                       <img src="./img/featured9.png" alt="">
+                   </div>
+                   <div class="latest-prdt-details">
+                       <h1 class="prdt-name">Comfort Handy Craft</h1>
+                       <div class="prdt-rate">
+                           <p class="crnt-rate">$42.00</p>
+                           <p class="prdt-org">$65.00</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="latest-img-wrapper">
+                   <div class="latest-img-box">
+                       <img src="./img/featured3.png" alt="">
+                   </div>
+                   <div class="latest-prdt-details">
+                       <h1 class="prdt-name">Comfort Handy Craft</h1>
+                       <div class="prdt-rate">
+                           <p class="crnt-rate">$42.00</p>
+                           <p class="prdt-org">$65.00</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="latest-img-wrapper">
+                   <div class="latest-img-box">
+                       <img src="./img/featured7.png" alt="">
+                   </div>
+                   <div class="latest-prdt-details">
+                       <h1 class="prdt-name">Comfort Handy Craft</h1>
+                       <div class="prdt-rate">
+                           <p class="crnt-rate">$42.00</p>
+                           <p class="prdt-org">$65.00</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="latest-img-wrapper">
+                   <div class="latest-img-box">
+                       <img src="./img/featured6.png" alt="">
+                   </div>
+                   <div class="latest-prdt-details">
+                       <h1 class="prdt-name">Comfort Handy Craft</h1>
+                       <div class="prdt-rate">
+                           <p class="crnt-rate">$42.00</p>
+                           <p class="prdt-org">$65.00</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="latest-img-wrapper">
+                   <div class="latest-img-box">
+                       <img src="./img/featured5.png" alt="">
+                   </div>
+                   <div class="latest-prdt-details">
+                       <h1 class="prdt-name">Comfort Handy Craft</h1>
+                       <div class="prdt-rate">
+                           <p class="crnt-rate">$42.00</p>
+                           <p class="prdt-org">$65.00</p>
+                       </div>
+                   </div>
+               </div>
+               <div class="latest-img-wrapper">
+                   <div class="latest-img-box">
+                       <img src="./img/featured4.png" alt="">
+                   </div>
+                   <div class="latest-prdt-details">
+                       <h1 class="prdt-name">Comfort Handy Craft</h1>
+                       <div class="prdt-rate">
+                           <p class="crnt-rate">$42.00</p>
+                           <p class="prdt-org">$65.00</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+         </div>
+
+        <!--shopex  -->
+         <h1 class="shopex-head">
+            What Shopex Offer!
+         </h1>
+         <div class="shopex">
+            <div class="offer-box">
+                <img src="./img/24-hours-support 1.png" alt="">
+                <div class="offer-head">24/7 Support</div>
+                <p class="offer-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ratione natus, nam rerum.</p>
+            </div>
+            <div class="offer-box">
+                <img src="./img/free-delivery 1.png" alt="">
+                <div class="offer-head">24/7 Support</div>
+                <p class="offer-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ratione natus, nam rerum.</p>
+            </div>
+            <div class="offer-box">
+                <img src="./img/cashback 1.png" alt="">
+                <div class="offer-head">24/7 Support</div>
+                <p class="offer-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ratione natus, nam rerum.</p>
+            </div>
+            <div class="offer-box">
+                <img src="./img/Group.png" alt="">
+                <div class="offer-head">24/7 Support</div>
+                <p class="offer-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ratione natus, nam rerum.</p>
+            </div>
+
+         </div> 
+        
+        <!-- banner -->
+         <div class="banner">
+            <div class="banner-img-wrapper">
+                <div class="banner-bg-violet "><img src="./img/banner.png" alt=""></div>
+                <div class="banner-product-img absolute top-0 right-0"><img src="./img/Home-Stylish-Club-Sofa-Chair-Pleated-Sofa-Armchair-with-Golden-Legs 1.png" alt=""></div>
+            </div>
+            <div class="banner-content-details">
+                <h1>Unique Features Of leatest & <br> Trending Poducts</h1>
+                <div class="banner-product-features"><img src="./img/rose.png" alt=""><p>All frames constructed with hardwood solids and laminates</p></div>
+                <div class="banner-product-features"><img src="./img/blue.png" alt=""><p>Reinforced with double wood dowels, glue, screw - nails corner <br> blocks and machine nails</p></div>
+                <div class="banner-product-features"><img src="./img/green.png" alt=""><p>Arms, backs and seats are structurally reinforced</p></div>
+                <div class="banner-section-button flex">
+                    <button>Add To Cart</button>
+                    <div class="flex flex-col ps-5">
+                        <p class="text-sm text-Text font-semibold">B&B Italian Sofa</p>
+                        <p class="text-sm text-Text">$32.00</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+        
+        <!-- trending product -->
+         <h1 class="subsection-head">Trending Products</h1>
+         <div class="trending">
+           <div class="trending-product-wrapper">
+               <div class="trending-img-wrapper mt-5 me-5">
+                   <img src="./img/trending1.png" alt="">
+                   <p class="text-Text text-base font-semibold  font-lato">Cantilever Chair</p>
+                   <div class="flex">
+                       <p class="pe-5 text-sm text-Text">$26.00</p>
+                       <p class="trendin-price text-sm text-subtext">$42.00</p>
+                   </div>
+               </div>
+               <div class="trending-img-wrapper mt-5 me-5">
+                   <img src="./img/trending2.png" alt="">
+                   <p class="text-Text text-base font-semibold  font-lato">Cantilever Chair</p>
+                   <div class="flex">
+                       <p class="pe-5 text-sm text-Text">$26.00</p>
+                       <p class="trendin-price text-sm text-subtext">$42.00</p>
+                   </div>
+               </div>
+               <div class="trending-img-wrapper mt-5 me-5">
+                   <img src="./img/trending3.png" alt="">
+                   <p class="text-Text text-base font-semibold  font-lato">Cantilever Chair</p>
+                   <div class="flex">
+                       <p class="pe-5 text-sm text-Text">$26.00</p>
+                       <p class="trendin-price text-sm text-subtext">$42.00</p>
+                   </div>
+               </div>
+               <div class="trending-img-wrapper mt-5 me-5">
+                   <img src="./img/trending4.png" alt="">
+                   <p class="text-Text text-base font-semibold  font-lato">Cantilever Chair</p>
+                   <div class="flex">
+                       <p class="pe-5 text-sm text-Text">$26.00</p>
+                       <p class="trendin-price text-sm text-subtext">$42.00</p>
+                   </div>
+               </div>
+           </div>
+           <div class="off-product">
+               <div class="off-prdt-wrapper relative me-3">
+                   <div class="off-prdt-text">
+                       <p class="off-prdt-head">23% off in all products</p>
+                       <p class="off-prdt-shop">Shop Now</p>
+                   </div>
+                   <div class="off-prdt-img"><img src="./img/trending5.png" alt=""></div>
+               </div>
+               <div class="off-prdt-wrapper relative bg-bgshade me-3">
+                   <div class="off-prdt-text">
+                       <p class="off-prdt-head">23% off in all products</p>
+                       <p class="off-prdt-shop">Shop Now</p>
+                   </div>
+                   <div class="off-prdt-img"><img src="./img/trending5.png" alt=""></div>
+               </div>
+               <div class="trending-prdt-list">
+                   <div class="trending-prdt-item">
+                       <div class="trending-prdt-img"><img src="./img/trending7.png" alt=""></div>
+                       <div class="trending-prtd-item-text">
+                           <h1>Executive Seat Chair</h1>
+                           <p>$32.00</p>
+                       </div>
+                   </div>
+                   <div class="trending-prdt-item">
+                       <div class="trending-prdt-img"><img src="./img/trending7.png" alt=""></div>
+                       <div class="trending-prtd-item-text">
+                           <h1>Executive Seat Chair</h1>
+                           <p>$32.00</p>
+                       </div>
+                   </div>
+                   <div class="trending-prdt-item">
+                       <div class="trending-prdt-img"><img src="./img/trending7.png" alt=""></div>
+                       <div class="trending-prtd-item-text">
+                           <h1>Executive Seat Chair</h1>
+                           <p>$32.00</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+         </div>
+
+        <!-- dicount item -->
+         <h1 class="shopex-head">Discount Item</h1>
+         <div class="discount">
+           <ul class="discount-list">
+               <li><a class="active" href="">Wood Chair</a></li>
+               <li><a href="">Plastic Chair</a></li>
+               <li><a href="">Sofa Collection</a></li>
+           </ul>
+           <div class="discount-content-wrapper">
+               <div class="dicount-text-section">
+                   <h1 class="discount-head">20% Discount Of All Products</h1>
+                   <h1 class="discount-sub-head">Eams Sofa Compact</h1>
+                   <p class="discount-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta commodi iste, nam maiores distinctio temporibus necessitatibus voluptates.</p>
+                   <div class="discoun-prdt-feature">
+                       <div class="me-5">
+                           <p>√ Material expose like metals</p>
+                           <p>√ Simple neutral colours.</p>
+                       </div>
+                       <div class="me-5">
+                           <p>√ Clear lines and geomatric figures</p>
+                           <p>√ Material expose like metals</p>
+                       </div>
+                   </div>
+                   <button class="discount-button">Shop Now</button>
+               </div>
+               <div class="discount-img">
+                   <img src="./img/discount1.png" alt="">
+               </div>
+           </div>
+         </div>
+
+        <!-- Top Categories -->
+         <h1 class="shopex-head">Top Categories</h1>
+         <div class="categoriess-wrapper">
+           <div class="catories">
+               <div class="catories-img relative">
+                   <div class="bottom-img"><img src="./img/violet.png" alt=""></div>
+                   <div class="top-img"><img src="./img/white.png" alt=""></div>
+                   <div class="prdt-img"><img src="./img/top1.png" alt=""></div>
+                   <button class="view-btn">View Shop</button>
+               </div>
+               <h1 class="categories-head">Mini LCW Chair</h1>
+               <p class="categories-rate">$56.00</p>
+           </div>
+           <div class="catories">
+               <div class="catories-img relative">
+                   <div class="bottom-img"><img src="./img/violet.png" alt=""></div>
+                   <div class="top-img"><img src="./img/white.png" alt=""></div>
+                   <div class="prdt-img"><img src="./img/top2.png" alt=""></div>
+                   <button class="view-btn">View Shop</button>
+               </div>
+               <h1 class="categories-head">Mini LCW Chair</h1>
+               <p class="categories-rate">$56.00</p>
+           </div>
+           <div class="catories">
+               <div class="catories-img relative">
+                   <div class="bottom-img"><img src="./img/violet.png" alt=""></div>
+                   <div class="top-img"><img src="./img/white.png" alt=""></div>
+                   <div class="prdt-img"><img src="./img/top3.png" alt=""></div>
+                   <button class="view-btn">View Shop</button>
+               </div>
+               <h1 class="categories-head">Mini LCW Chair</h1>
+               <p class="categories-rate">$56.00</p>
+           </div>
+           <div class="catories">
+               <div class="catories-img relative">
+                   <div class="bottom-img"><img src="./img/violet.png" alt=""></div>
+                   <div class="top-img"><img src="./img/white.png" alt=""></div>
+                   <div class="prdt-img"><img src="./img/top2.png" alt=""></div>
+                   <button class="view-btn">View Shop</button>
+               </div>
+               <h1 class="categories-head">Mini LCW Chair</h1>
+               <p class="categories-rate">$56.00</p>
+           </div>
+         </div>
+
+        <!-- subscribe -->
+         <div class="subscriber-banner">
+            <img src="./img/Rectangle 102.png" alt="" class="subscribe-img">
+           <div class="subscribe-content">
+                <h1>Get Leatest Update By Subscribe <br> 0ur Newslater</h1>
+                <button class="subscribe-btn">Subscribe</button>
+           </div>
+         </div>
+         <div class="brands"><img src="./img/brands.png" alt=""></div>
+
+        <!-- latest blog -->
+         <h1 class="shopex-head">Latest Blog</h1>
+         <div class="blog-wrapper">
+           <div class="blog">
+               <img src="./img/ltest1.png" alt="">
+               <div class="blog-content">
+                   <div class="date-name flex">
+                       <div class="writer-name flex me-5 justify-center items-center">
+                           <img src="./img/pen.png" alt="">
+                           <p class="writername ps-2">Sabeer Ali</p>
+                       </div>
+                       <div class="blog-date flex justify-center items-center">
+                           <img src="./img/calendar.png" alt="">
+                           <p class="date ps-2">21 August, 2020</p>
+                       </div>
+                   </div>
+                       <h1 class="blog-head">Top Essential Trends in 2021</h1>
+                       <p class="blog-desc">More off this less hello samlande lied much over tightly circa horse taped mightly</p>
+                       <a href="" class="read">Read More</a>
+               </div>
+           </div>
+           <div class="blog">
+               <img src="./img/latest2.png" alt="">
+               <div class="blog-content">
+                   <div class="date-name flex">
+                       <div class="writer-name flex me-5 justify-center items-center">
+                           <img src="./img/pen.png" alt="">
+                           <p class="writername ps-2">Sabeer Ali</p>
+                       </div>
+                       <div class="blog-date flex justify-center items-center">
+                           <img src="./img/calendar.png" alt="">
+                           <p class="date ps-2">21 August, 2020</p>
+                       </div>
+                   </div>
+                       <h1 class="blog-head">Top Essential Trends in 2021</h1>
+                       <p class="blog-desc">More off this less hello samlande lied much over tightly circa horse taped mightly</p>
+                       <a href="" class="read">Read More</a>
+               </div>
+           </div>
+           <div class="blog">
+               <img src="./img/laest3.png" alt="">
+               <div class="blog-content">
+                   <div class="date-name flex">
+                       <div class="writer-name flex me-5 justify-center items-center">
+                           <img src="./img/pen.png" alt="">
+                           <p class="writername ps-2">Sabeer Ali</p>
+                       </div>
+                       <div class="blog-date flex justify-center items-center">
+                           <img src="./img/calendar.png" alt="">
+                           <p class="date ps-2">21 August, 2020</p>
+                       </div>
+                   </div>
+                       <h1 class="blog-head">Top Essential Trends in 2021</h1>
+                       <p class="blog-desc">More off this less hello samlande lied much over tightly circa horse taped mightly</p>
+                       <a href="" class="read">Read More</a>
+               </div>
+           </div>
+         </div>
+    </main>
+    <footer>
+        <div class="top-section">
+            <div class="logo-section mr-5  mt-5">
+                <h1 class="logo">Hekto</h1>
+                <div class="signnup relative mt-5">
+                    <input type="text" placeholder="Enter Email Address">
+                    <button>Sign Up</button>
+                </div>
+                <div class="cotact-info mt-5">
+                    <p class="pb-2">Contact Info</p>
+                    <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                </div>
+            </div>
+            <div class="footer-list-section mr-5 mt-5">
+                <h1>Categories</h1>
+                <ul class="list-items">
+                    <li><a href="#">Laptops & Computers</a></li>
+                    <li><a href="#">Cameras & Photography</a></li>
+                    <li><a href="#">Smart Phones & Tablets</a></li>
+                    <li><a href="#">Video Games & Consoles</a></li>
+                    <li><a href="#">Waterproof Headphones</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-section mr-5 mt-5">
+                <h1>Customer Care</h1>
+                <ul class="list-items">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order History</a></li>
+                    <li><a href="#">order Tracking</a></li>
+                </ul>
+            </div>
+            <div class="footer-list-section mr-5  mt-5">
+                <h1>Pages</h1>
+                <ul class="list-items">
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Browse the Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Pre-Built Pages</a></li>
+                    <li><a href="#">Visual Composer Elements</a></li>
+                    <li><a href="#">WooCommerce Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-section">
+            <p>©Webecy - All Rights Reserved</p>
+            <div class="social-icons">
+                <div class="s-icons"><i class='bx bxl-facebook'></i></div>
+                <div class="s-icons"><i class='bx bxl-instagram' ></i></div>
+                <div class="s-icons"><i class='bx bxl-twitter' ></i></div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+    <script src="./owl/jquery.min.js"></script>
+    <script src="./owl/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                768:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                },
+                1280:{
+                    items:4
+                }
+            }
+        })
+    </script>
+</body>
+</html>
